@@ -710,6 +710,7 @@ footer .footerInner .copyK img {
         /* background-color: red; */
         position: relative;
         padding: 0;
+        
     }
 
     section#service .sInner .text {
@@ -728,10 +729,23 @@ footer .footerInner .copyK img {
         /* padding-top: 48px; */
     }
 
-    section#service .sInner .serviceBox img {
-        width: 100%;
+    section#service .sInner .serviceBox .frame1,
+    section#service .sInner .serviceBox .frame2,
+    section#service .sInner .serviceBox .frame3
+    {
+        width: 327px;
         height: 224px;
-        display: block;
+    }
+
+    section#service .sInner .serviceBox  .textbox {
+        width: 284px;
+        height: 184px;
+    
+        margin: 24px auto;
+        display: flex;
+        flex-direction: column;
+        /* display: none; */
+    
     }
 
     section#service .sInner .serviceBox span {
