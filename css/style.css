@@ -1,0 +1,797 @@
+@charset "utf-8";
+
+
+/* reset */
+* {
+    padding: 0;
+
+    margin: 0;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+ul,
+li {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+.blind {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+   overflow: hidden;
+}
+
+
+
+/* header */
+
+header {
+    width: 100%;
+    height: 100px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+    background-color: rgba(255, 255, 255, 0.002);
+    box-sizing: border-box;
+    position: fixed;
+    z-index: 10;
+
+}
+
+header .headerInner {
+    width: 1180px;
+    height: 34px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+
+/* 로고 */
+header .headerInner h1.logo img {
+    width: 127px;
+    height: 34px;
+}
+
+/* 대메뉴 */
+header .headerInner ul.nav_list {
+    display: flex;
+    gap: 48px;
+    color: #fff;
+    width: 175px;
+    height: 26px;
+    font-size: 17px;
+    font-weight: 500;
+    font-family: 'Noto Sans KR';
+}
+
+header .headerInner ul.nav_list li {
+    cursor: pointer;
+}
+
+/* 메인페이지 */
+section#mainPage {
+    background: url("../images/background.png") no-repeat center/cover;
+    width: 100%;
+    height: 1080px;
+    margin: 0 auto;
+    position: relative;
+}
+
+section#mainPage .mt {
+    width: auto;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: block;
+}
+
+section#mainPage .mt p {
+    font-size: 24px;
+    font-weight: 500;
+    color: #fff;
+    display: block;
+    text-align: center;
+    position: absolute;
+    transform: translateX(-50%);
+    left: 50%;
+    width: 100%;
+    margin-top: 44.4px;
+    width: 600px;
+    height: 30px;
+
+
+}
+
+section#mainPage .arrow {
+    position: absolute;
+    transform: translateX(-50%);
+    left: 50%;
+    bottom: 0;
+    animation: movingarrow 1.2s infinite ease-out;
+}
+
+section#mainPage .arrow img {
+    width: 48px;
+    height: 48px;
+}
+
+@keyframes movingarrow {
+    0% {
+        bottom: 0;
+    }
+
+    50% {
+        bottom: 15px;
+    }
+
+    100% {
+        bottom: 0;
+    }
+}
+
+/* 두번째페이지 */
+section#secondPage {
+    width: 100%;
+    height: 1080px;
+    display: flex;
+    margin: 0 auto;
+
+}
+
+section#secondPage>div {
+    position: relative;
+
+}
+
+section#secondPage .image01,
+section#secondPage .image02,
+section#secondPage .image03,
+section#secondPage .image04 {
+    /* background: url(../images/1.png.png)no-repeat center/cover; */
+    width: 25%;
+    overflow: hidden;
+    height: 100%;
+}
+
+
+
+section#secondPage img {
+    transition: 0.5s;
+    width: 100%;
+    height: 1080px;
+
+}
+
+section#secondPage .image01:hover>img {
+    transform: scale(1.1);
+
+}
+
+section#secondPage .image02:hover>img {
+    transform: scale(1.1);
+}
+
+section#secondPage .image03:hover>img {
+    transform: scale(1.1);
+}
+
+section#secondPage .image04:hover>img {
+    transform: scale(1.1);
+}
+
+
+section#secondPage div div {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-weight: 500;
+    font-size: 32px;
+    text-align: center;
+    line-height: 48px;
+    width: 300px;
+    word-break: keep-all;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+
+/* missionVision */
+section#missionVision {
+    width: 100%;
+    height: 1200px;
+    background-color: #212731;
+    position: relative;
+    overflow: hidden;
+}
+
+section#missionVision .mInner {
+    width: 1180px;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+
+}
+
+
+
+
+
+section#missionVision .mInner .mission {
+    color: #38A8FA;
+    position: absolute;
+    left: 50%;
+    top: 177px;
+    font-weight: 700;
+
+}
+
+section#missionVision .mInner .mission h2 {
+    font-size: 36px;
+    color: #fff;
+    margin: 12px 0 20px;
+    line-height: 1.4;
+    /* position: absolute; */
+}
+
+section#missionVision .mInner .mission span {
+    font-size: 18px;
+    color: #fff;
+    font-weight: normal;
+}
+
+
+section#missionVision .mInner .vision {
+    color: #38A8FA;
+    position: absolute;
+    left: 0%;
+    bottom: 304px;
+    font-weight: 700;
+
+}
+
+section#missionVision .mInner .vision h2 {
+    font-size: 36px;
+    color: #fff;
+    margin: 12px 0 20px;
+    line-height: 1.4;
+    /* position: absolute; */
+}
+
+section#missionVision .mInner .vision span {
+    font-size: 18px;
+    color: #fff;
+    font-weight: normal;
+}
+
+
+
+section#missionVision .lBg {
+    position: absolute;
+    width: 864px;
+    top: 0px;
+    left: 0px;
+
+
+}
+
+section#missionVision .rBg {
+    position: absolute;
+    width: 960px;
+    right: 0px;
+    bottom: 0px;
+
+}
+
+/* service */
+section#service {
+    width: 100%;
+    height: 751px;
+    padding-top: 60px;
+
+
+}
+
+section#service .sInner {
+    width: 1180px;
+    height: 491px;
+    margin: 0 auto;
+
+    position: relative;
+    padding: 80px 0 80px 0;
+
+}
+
+section#service .sInner .text {
+    position: absolute;
+
+    /* background: blue; */
+    font-size: 36px;
+    line-height: 54px;
+    font-weight: 500;
+}
+
+section#service .sInner .serviceBox {
+    display: flex;
+    width: 1180px;
+    height: 363px;
+    /* top: 229px; */
+    justify-content: space-between;
+    margin-top: 148px;
+    position: absolute;
+    /* padding-top: 48px; */
+}
+
+
+section#service .sInner .serviceBox .frame1 {
+    width: 380px;
+    height: 280px;
+    overflow: hidden;
+    background: url(../images/frame-1.png) no-repeat center/cover;
+
+}
+
+
+
+
+section#service .sInner .serviceBox .frame1:hover {
+
+    background: #052E4D;
+}
+
+section#service .sInner .serviceBox  .textbox {
+    width: 284px;
+    height: 184px;
+
+    margin: 48px auto;
+    display: flex;
+    flex-direction: column;
+    /* display: none; */
+
+}
+.unactive01,
+.unactive02,
+.unactive03
+{
+    display: none;
+}
+
+
+section#service .sInner .serviceBox  .textbox .box1 {
+    width: 284px;
+    height: 100px;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #fff;
+    
+
+}
+
+section#service .sInner .serviceBox  .textbox .box2 {
+    height: 84px;
+    width: 284px;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    font-weight: 700;
+
+}
+
+section#service .sInner .serviceBox  .textbox .box2 div {
+    color: #fff;
+
+}
+
+section#service .sInner .serviceBox  .textbox .box2 img {
+    color: #fff;
+    width: 16px;
+    height: 18px;
+
+}
+
+
+section#service .sInner .serviceBox .frame2 {
+    width: 380px;
+    height: 280px;
+    overflow: hidden;
+    background: url(../images/frame-2.png) no-repeat center/cover;
+}
+
+section#service .sInner .serviceBox .frame2:hover {
+
+    background: #052E4D;
+}
+
+section#service .sInner .serviceBox .frame3 {
+    width: 380px;
+    height: 280px;
+    overflow: hidden;
+    background: url(../images/frame-3.png) no-repeat center/cover;
+}
+
+section#service .sInner .serviceBox .frame3:hover {
+
+    background: #052E4D;
+}
+
+section#service .sInner .serviceBox span {
+    width: 380px;
+    display: block;
+    margin-top: 20px;
+    color: #999999;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+section#service .sInner .serviceBox p {
+    font-size: 24px;
+    font-weight: 700;
+
+
+}
+
+/* sup */
+section#sup {
+    width: 100%;
+    height: 196px;
+    position: relative;
+    background-color: #ebedf0;
+}
+
+section#sup .supInner {
+    width: 1180px;
+    margin: 0 auto;
+    height: 196px;
+    top: 80px;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    color: #212731;
+
+
+}
+
+section#sup .supInner p {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+section#sup .supInner span {
+    font-size: 18px;
+    font-weight: 700;
+    display: block;
+    cursor: pointer;
+}
+
+section#sup .supInner span img {
+    width: 22px;
+    height: 16px;
+    display: inline-block;
+    padding-left: 10px;
+
+}
+
+section#sup .supInner span:hover img {
+    transition: 0.3s;
+    transform: translateX(10px);
+}
+
+
+/* footer */
+footer {
+    width: 100%;
+    height: 240px;
+
+}
+
+footer .footerInner {
+    width: 1180px;
+    margin: 0 auto;
+
+    height: 240px;
+    position: relative;
+}
+
+footer .footerInner .bLogo {
+    position: absolute;
+    top: 48px;
+}
+
+footer .footerInner .bLogo img {
+    width: 120px;
+    height: 32px;
+}
+
+footer .footerInner .contact {
+    position: absolute;
+    top: 100px;
+    color: #12161a;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+footer .footerInner .copyK {
+    position: absolute;
+    top: 152px;
+    display: flex;
+    justify-content: space-between;
+    width: 1180px;
+    color: #6C7680;
+}
+
+footer .footerInner .copyK img {
+    width: 125px;
+    height: 20px;
+}
+
+/* 미디어쿼리 */
+
+/* 모바일 */
+@media screen and (max-width: 768px) {
+
+    /* 모바일 헤더 */
+    body {
+        max-width: 768px;
+
+
+    }
+
+    header {
+        height: 62px;
+    }
+
+    header .headerInner {
+        width: 327px;
+        height: 28px;
+    }
+
+    header .headerInner h1.logo img {
+        width: 104px;
+        height: 28px;
+    }
+
+    header .headerInner ul.nav_list {
+        display: none;
+    }
+
+    /* 메인페이지 */
+    section#mainPage {
+        width: 100%;
+        max-width: 768px;
+        height: 896px;
+        background: url("../images/background2.png") no-repeat center/cover;
+    }
+
+    section#mainPage .mt p {
+        width: 226px;
+        font-size: 18px;
+        text-align: left;
+    }
+
+    section#mainPage .mt img {
+        width: 280px;
+        height: 148px;
+    }
+
+    /* 모바일 두번쨰 페이지 */
+    section#secondPage {
+        width: 100%;
+        height: 880px;
+        flex-direction: column;
+    }
+
+    section#secondPage img {
+        transition: 0.5s;
+        width: 100%;
+        height: 900px;
+
+
+    }
+
+    section#secondPage .image01,
+    section#secondPage .image02,
+    section#secondPage .image03,
+    section#secondPage .image04 {
+        /* background: url(../images/1.png.png)no-repeat center/cover; */
+        width: 100%;
+        height: 25%;
+
+    }
+
+    section#secondPage div div {
+        font-size: 20px;
+    }
+
+    /* 모바일 missionVision */
+    section#missionVision {
+        width: 100%;
+        height: 960px;
+        position: relative;
+
+    }
+
+    section#missionVision .mInner {
+        width: 100%;
+        height: 100%;
+        margin: 0 auto;
+        position: relative;
+        padding-top: 180px;
+
+
+
+    }
+
+
+    section#missionVision .lBg {
+        position: absolute;
+        width: 50%;
+        top: 0px;
+        left: 0px;
+
+    }
+
+    section#missionVision .rBg {
+        display: none;
+    }
+
+    section#missionVision .mInner .mission {
+        color: #38A8FA;
+        position: absolute;
+        left: 50%;
+        top: 177px;
+        font-weight: 700;
+        /* height: 24px; */
+        width: 327px;
+        transform: translateX(-50%);
+        font-size: 14px;
+        margin: 0 auto;
+
+    }
+
+    section#missionVision .mInner .mission h2 {
+        font-size: 28px;
+        margin: 6px 0 0;
+    }
+
+    section#missionVision .mInner .mission span {
+        font-size: 16px;
+        margin: 20px 0 0;
+        display: block;
+    }
+
+
+
+    section#missionVision .mInner .vision {
+        color: #38A8FA;
+        position: absolute;
+        left: 50%;
+        bottom: 304px;
+        font-weight: 700;
+        transform: translateX(-50%);
+        width: 327px;
+        font-size: 14px;
+
+    }
+
+    section#missionVision .mInner .vision h2 {
+        font-size: 28px;
+        margin: 6px 0 0;
+    }
+
+    section#missionVision .mInner .vision span {
+        font-size: 16px;
+        margin: 20px 0 0;
+        display: block;
+    }
+
+    /* 모바일 service */
+    section#service {
+        height: 1280px;
+        /* padding-top: 60px */
+    }
+
+    section#service .sInner {
+        width: 327px;
+        height: 100%;
+        margin: 0 auto;
+        /* background-color: red; */
+        position: relative;
+        padding: 0;
+    }
+
+    section#service .sInner .text {
+        font-size: 28px;
+        top: 0;
+    }
+
+    section#service .sInner .serviceBox {
+        flex-direction: column;
+        width: 100%;
+        height: 1100px;
+        /* top: 229px; */
+        justify-content: space-between;
+        margin-top: 148px;
+        position: absolute;
+        /* padding-top: 48px; */
+    }
+
+    section#service .sInner .serviceBox img {
+        width: 100%;
+        height: 224px;
+        display: block;
+    }
+
+    section#service .sInner .serviceBox span {
+        font-size: 14px;
+        margin-top: 12px;
+    }
+
+    /* 모바일 sup */
+    section#sup {
+        width: 100%;
+        height: 124px;
+        padding: 40px 0;
+    }
+
+    section#sup .supInner {
+        width: 327px;
+        height: 124px;
+        flex-direction: column;
+        text-align: left;
+        align-items: normal;
+    }
+
+    section#sup .supInner p {
+        font-size: 20px;
+
+    }
+
+    section#sup .supInner span {
+        font-size: 16px;
+        font-weight: 600;
+        /* display: block; */
+        cursor: pointer;
+
+    }
+
+    /* 모바일 footer */
+    footer {
+        width: 100%;
+        height: 182px;
+    }
+
+    footer .footerInner {
+        width: 327px;
+        padding: 48px 0 0;
+    }
+
+    footer .footerInner .bLogo img {
+        width: 96px;
+        height: 26px;
+
+    }
+
+    footer .footerInner .copyK {
+        position: absolute;
+        flex-direction: column;
+        display: flex;
+        justify-content: space-between;
+        width: 327px;
+        color: #6C7680;
+
+        height: 61px;
+    }
+}
