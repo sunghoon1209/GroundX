@@ -13,7 +13,7 @@ $(window).scroll(() => {
 
     };
 
-    if ($(this).scrollTop() > 2200) {
+    if ($(this).scrollTop() > 2159) {
         $(".companyIn").css("color", "#38A8FA");
 
     } 
@@ -26,7 +26,7 @@ $(window).scroll(() => {
         $(".companySec").css("color", "");
         
     } 
-    if ($(this).scrollTop() < 2200) {
+    if ($(this).scrollTop() < 2159) {
         $(".companyIn").css("color", "");
 
     } 
