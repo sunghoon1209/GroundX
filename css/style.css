@@ -710,7 +710,6 @@ footer .footerInner .copyK img {
         /* background-color: red; */
         position: relative;
         padding: 0;
-        
     }
 
     section#service .sInner .text {
@@ -729,23 +728,10 @@ footer .footerInner .copyK img {
         /* padding-top: 48px; */
     }
 
-    section#service .sInner .serviceBox .frame1,
-    section#service .sInner .serviceBox .frame2,
-    section#service .sInner .serviceBox .frame3
-    {
-        width: 327px;
+    section#service .sInner .serviceBox img {
+        width: 100%;
         height: 224px;
-    }
-
-    section#service .sInner .serviceBox  .textbox {
-        width: 284px;
-        height: 184px;
-    
-        margin: 24px auto;
-        display: flex;
-        flex-direction: column;
-        /* display: none; */
-    
+        display: block;
     }
 
     section#service .sInner .serviceBox span {
@@ -766,6 +752,7 @@ footer .footerInner .copyK img {
         flex-direction: column;
         text-align: left;
         align-items: normal;
+        
     }
 
     section#sup .supInner p {
@@ -780,6 +767,13 @@ footer .footerInner .copyK img {
         cursor: pointer;
 
     }
+    section#service .sInner .serviceBox .frame1,
+    section#service .sInner .serviceBox .frame2,
+    section#service .sInner .serviceBox .frame3
+
+    {
+        width: 327px;
+    }
 
     /* 모바일 footer */
     footer {
@@ -790,6 +784,7 @@ footer .footerInner .copyK img {
     footer .footerInner {
         width: 327px;
         padding: 48px 0 0;
+        
     }
 
     footer .footerInner .bLogo img {

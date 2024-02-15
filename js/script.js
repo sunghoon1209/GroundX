@@ -1,4 +1,6 @@
+
 $(window).scroll(() => {
+    // 스크롤 이동시 헤더메뉴 변경
     if ($(this).scrollTop() > 10) {
         $("header").css("background-color", "#fff");
         $("ul.nav_list").css("color", "#000");
@@ -13,7 +15,7 @@ $(window).scroll(() => {
 
     };
 
-    if ($(this).scrollTop() > 2159) {
+    if ($(this).scrollTop() > 2200) {
         $(".companyIn").css("color", "#38A8FA");
 
     } 
@@ -26,7 +28,7 @@ $(window).scroll(() => {
         $(".companySec").css("color", "");
         
     } 
-    if ($(this).scrollTop() < 2159) {
+    if ($(this).scrollTop() < 2200) {
         $(".companyIn").css("color", "");
 
     } 
@@ -64,7 +66,7 @@ $(document).ready(function($) {
         $('html,body').animate({scrollTop:$("#mainPage").offset().top}, 0.1 );
 
   });
-// 
+// .frame 상자에 마우스올릴때 설명
 $(".frame1").mouseover(function(){
     $(".unactive01").addClass("textbox");
     $(".unactive01").removeClass("unactive01");   
